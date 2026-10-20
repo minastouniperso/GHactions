@@ -4,11 +4,13 @@ on:
   push:
     paths:
       - ".github/workflows/upper-buildMM.yml"
-      - "api/**"
+      - "uper/**"
   workflow_dispatch: # manual
 
   jobs:
     build:
       name: build-dotnet-api
       runs-on: ubuntu-latest
+      steps: 
+        -run: go version
       
