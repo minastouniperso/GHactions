@@ -1,4 +1,4 @@
-name: api-build
+name: upper-buildMM
 
 on:
   push:
@@ -9,7 +9,6 @@ on:
 
   jobs:
     build:
-      name: build-dotnet-api
       runs-on: ubuntu-latest
       steps: 
         -run: go version
