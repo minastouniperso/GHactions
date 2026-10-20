@@ -7,9 +7,8 @@ on:
       - "upper/**"
   workflow_dispatch: # manual
 
-  jobs:
+jobs:
     build:
       runs-on: ubuntu-latest
       steps: 
         -run: go version
-      
