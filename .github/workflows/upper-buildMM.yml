@@ -7,10 +7,10 @@ on:
       - "uper/**"
   workflow_dispatch: # manual
 
-  jobs:
+jobs:
     build:
       name: build-dotnet-api
-      runs-on: ubuntu-latest
+      runs-on: self-hosted
       steps: 
         -run: go version
       
