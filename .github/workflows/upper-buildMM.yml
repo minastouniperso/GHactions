@@ -1,16 +1,19 @@
-name: api-build
+name: upper-buildMM
 
 on:
   push:
     paths:
       - ".github/workflows/upper-buildMM.yml"
-      - "uper/**"
+      - "upper/**"
   workflow_dispatch: # manual
 
 jobs:
     build:
+<<<<<<< HEAD
       name: build-dotnet-api
       runs-on: self-hosted
+=======
+      runs-on: ubuntu-latest
+>>>>>>> 85dec784e076a66aebe8bffa13457cea75b38034
       steps: 
-        -run: go version
-      
+        - run: go version
